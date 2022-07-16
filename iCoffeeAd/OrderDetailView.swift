@@ -8,13 +8,46 @@
 import SwiftUI
 
 struct OrderDetailView: View {
+    
+    var order: Order
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            List {
+                Section(header: Text("Customer")) {
+                    NavigationLink(destination: UserDetailView(order: order)) {
+                        Text(order.customerName)
+                            .font(.headline)
+                    }
+                }
+                
+                Section(header: Text("Order Imtems")) {
+                    ForEach(self.order.orderItems) { drink in
+                        HStack{
+                            Text(drink.name)
+                            
+                            Spacer()
+                            
+                            Text("$ \(drink.price.clean)")
+                        }
+                    }
+                }
+            }
+        }
+        .navigationTitle("Orders")
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarItems(trailing:
+                                Button(action: {
+            print("complete order")
+        }, label: {
+            Text("Complete Order")
+        })
+        )
     }
 }
 
 struct OrderDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        OrderDetailView()
+        OrderDetailView(order: Order())
     }
 }

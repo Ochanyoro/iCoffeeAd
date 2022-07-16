@@ -18,7 +18,7 @@ struct ContentView: View {
             List {
                 Section(header: Text("active order")) {
                     ForEach(self.orderListener.activeOrders ?? []) { order in
-                        NavigationLink(destination: OrderDetailView()) {
+                        NavigationLink(destination: OrderDetailView(order: order)) {
                             HStack {
                                 Text(order.customerName)
                                 
@@ -32,7 +32,7 @@ struct ContentView: View {
                 
                 Section(header: Text("Completed order")) {
                     ForEach(self.orderListener.completedOrders ?? []) { order in
-                        NavigationLink(destination: OrderDetailView()) {
+                        NavigationLink(destination: OrderDetailView(order: order)) {
                             HStack {
                                 Text(order.customerName)
                                 
