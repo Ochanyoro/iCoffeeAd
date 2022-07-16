@@ -38,12 +38,21 @@ struct OrderDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems(trailing:
                                 Button(action: {
-            print("complete order")
+            self.markAsCompleted()
         }, label: {
             Text("Complete Order")
         })
         )
     }
+    
+    
+    private func markAsCompleted() {
+        if !order.isCompleted {
+            order.isCompleted = true
+            order.saveOrderToFirebase()
+        }
+    }
+    
 }
 
 struct OrderDetailView_Previews: PreviewProvider {
