@@ -28,6 +28,7 @@
 		8233E4002882C99D003E174F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8233E3FF2882C99D003E174F /* Extensions.swift */; };
 		8233E4022882CA8E003E174F /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8233E4012882CA8E003E174F /* GlobalHelpers.swift */; };
 		8233E4062882CF99003E174F /* OrderListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8233E4052882CF99003E174F /* OrderListener.swift */; };
+		8233E4082882D4D0003E174F /* OrderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8233E4072882D4D0003E174F /* OrderDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		8233E3FF2882C99D003E174F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8233E4012882CA8E003E174F /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		8233E4052882CF99003E174F /* OrderListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListener.swift; sourceTree = "<group>"; };
+		8233E4072882D4D0003E174F /* OrderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				8233E4042882CF53003E174F /* Model */,
 				8233E4032882CF48003E174F /* Helpers */,
 				8233E4052882CF99003E174F /* OrderListener.swift */,
+				8233E4072882D4D0003E174F /* OrderDetailView.swift */,
 			);
 			path = iCoffeeAd;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				8233E3FC2882C935003E174F /* FirebaseReference.swift in Sources */,
 				8233E3D52882C2ED003E174F /* ContentView.swift in Sources */,
 				8233E3FA2882C91E003E174F /* FUser.swift in Sources */,
+				8233E4082882D4D0003E174F /* OrderDetailView.swift in Sources */,
 				8233E3F62882C8DA003E174F /* Drink.swift in Sources */,
 				8233E3D32882C2ED003E174F /* iCoffeeAdApp.swift in Sources */,
 			);
